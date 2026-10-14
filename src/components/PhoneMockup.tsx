@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
@@ -74,7 +74,7 @@ export default function PhoneMockup({ onClick }: { onClick: () => void }) {
         transition: "transform 0.6s cubic-bezier(0.2,0.8,0.2,1)",
       }}
     >
-      {/* Hologram beam — rises from platform through phone */}
+      {/* Beam */}
       <div
         className="hologram-beam absolute"
         style={{
@@ -113,7 +113,7 @@ export default function PhoneMockup({ onClick }: { onClick: () => void }) {
         aria-hidden="true"
       />
 
-      {/* Platform bright core */}
+      {/* Platform core */}
       <div
         className="absolute"
         style={{
@@ -132,7 +132,7 @@ export default function PhoneMockup({ onClick }: { onClick: () => void }) {
         aria-hidden="true"
       />
 
-      {/* Platform outer ring */}
+      {/* Platform ring */}
       <div
         className="absolute"
         style={{
@@ -151,7 +151,7 @@ export default function PhoneMockup({ onClick }: { onClick: () => void }) {
         aria-hidden="true"
       />
 
-      {/* Phone — WRAPPED so animation doesn't break centering */}
+      {/* Phone — wrapper div for centering, button for animation */}
       <div
         className="absolute"
         style={{

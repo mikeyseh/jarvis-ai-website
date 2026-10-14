@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Navbar from "./Navbar";
@@ -19,7 +19,6 @@ export default function Hero() {
       <div className="relative z-40 flex-1 flex items-center">
         <div className="w-full max-w-[1400px] mx-auto px-8 md:px-14 lg:px-20 py-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-            {/* LEFT — Text */}
             <div>
               <div
                 className="mb-5 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] tracking-widest font-medium"
@@ -52,7 +51,6 @@ export default function Hero() {
                     background: "linear-gradient(90deg, #00E5FF 0%, #8A2BE2 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
-                    filter: "drop-shadow(0 0 30px rgba(0,229,255,0.4))",
                   }}
                 >
                   again.
@@ -103,7 +101,6 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* RIGHT — Phone stage */}
             <div className="flex justify-center items-center">
               <PhoneMockup onClick={() => setDemoOpen(true)} />
             </div>
